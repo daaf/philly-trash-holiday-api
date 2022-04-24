@@ -1,3 +1,5 @@
+"""Constants returned by the API."""
+
 # Standard library imports
 from datetime import date
 
