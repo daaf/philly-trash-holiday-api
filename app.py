@@ -4,7 +4,7 @@
 from flask import jsonify, Response
 
 # Local imports
-from . import flask_extensions, globals
+from . import flask_extensions, constants
 
 
 app = flask_extensions.FlaskApp(__name__)
@@ -17,4 +17,4 @@ def get_trash_holidays() -> Response:
     :return: The list of trash holidays serialized to JSON and wrapped
         in a flask.Response object.
     """
-    return jsonify(globals.TRASH_HOLIDAYS_2022)
+    return jsonify(constants.TRASH_HOLIDAYS_2022)
